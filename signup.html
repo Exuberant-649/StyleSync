@@ -11,17 +11,22 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      margin: 0;
     }
+
     h1 {
       color: #d63384;
     }
+
     .signup-box {
       background-color: #ffffff;
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       width: 300px;
+      text-align: center;
     }
+
     input {
       width: 100%;
       padding: 10px;
@@ -29,6 +34,7 @@
       border-radius: 8px;
       border: 1px solid #ccc;
     }
+
     button {
       width: 100%;
       padding: 10px;
@@ -38,7 +44,13 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      font-size: 16px;
     }
+
+    button:hover {
+      background-color: #b02a6f;
+    }
+
     a {
       display: block;
       margin-top: 15px;
@@ -47,15 +59,24 @@
       color: #d63384;
       text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
+
   <h1>Create Your StyleSync Account</h1>
+
   <div class="signup-box">
     <input type="text" id="name" placeholder="Full Name">
     <input type="email" id="email" placeholder="Email">
     <input type="password" id="password" placeholder="Password">
+
     <button onclick="checkSignup()">Sign Up</button>
+
     <a href="login.html">Already have an account? Login</a>
   </div>
 
@@ -69,8 +90,12 @@
         alert("Please fill in all fields.");
       } else {
         alert("Thanks for signing up, " + name + "!");
+        
+        // 👇 redirect to home page
+        window.location.href = "index.html";
       }
     }
   </script>
+
 </body>
 </html>
