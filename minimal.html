@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StyleSync - Minimal</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { background-color: #f9fff9; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background-color: #ccffdd; padding: 10px 20px; }
+    nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav li { margin: 5px 15px; }
+    nav a { text-decoration: none; color: #004d26; font-weight: bold; }
+    h1, h2 { text-align: center; color: #004d26; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .style-card { text-align: center; }
+    .style-card img { width: 200px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .save-btn { background: none; border: none; font-size: 22px; cursor: pointer; margin-top: 5px; }
+    .saved { color: red; }   /* ❤️ */
+    .unsaved { color: grey; } /* 🤍 */
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="streetwear.html">Streetwear</a></li>
+      <li><a href="boho.html">Boho</a></li>
+      <li><a href="ethnic.html">Ethnic</a></li>
+      <li><a href="formal.html">Formal</a></li>
+      <li><a href="retro.html">Retro</a></li>
+      <li><a href="minimal.html">Minimal</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <h1>StyleSync</h1>
+  <h2>Minimal Blazer Look Collection</h2>
+
+  <div class="gallery">
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/14/bd/bb/14bdbb02f045ca2615b2b781d01846e0.jpg" alt="Minimal Blazer 1">
+      <button class="save-btn" data-name="Minimal Blazer 1">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/b4/ae/74/b4ae74b112cdb56774d14a563c401645.jpg" alt="Minimal Blazer 2">
+      <button class="save-btn" data-name="Minimal Blazer 2">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/67/e9/e5/67e9e5c273643e7bb631e2a2dcb0e2ea.jpg" alt="Minimal Blazer 3">
+      <button class="save-btn" data-name="Minimal Blazer 3">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://img.fantaskycdn.com/c82e6acc72b904c4bd297a7344fc4617_2056x.jpeg" alt="Minimal Blazer 4">
+      <button class="save-btn" data-name="Minimal Blazer 4">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/b8/32/dd/b832dd618b703b0458b06774d5747158.jpg" alt="Minimal Blazer 5">
+      <button class="save-btn" data-name="Minimal Blazer 5">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/8a/e5/df/8ae5df517b0f76674d1370511455e4e7.jpg" alt="Minimal Blazer 6">
+      <button class="save-btn" data-name="Minimal Blazer 6">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/92/e9/7a/92e97ab91f9e5c14bc253cab707c63a6.jpg" alt="Minimal Blazer 7">
+      <button class="save-btn" data-name="Minimal Blazer 7">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/17/bc/a3/17bca33248a8d03fbe6cb7543ad538f2.jpg" alt="Minimal Blazer 8">
+      <button class="save-btn" data-name="Minimal Blazer 8">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/6e/35/99/6e3599de394cc1520c7c8158ae849ea1.jpg" alt="Minimal Blazer 9">
+      <button class="save-btn" data-name="Minimal Blazer 9">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/15/a7/70/15a770cb5b774c0ab9f58395c4452d57.jpg" alt="Minimal Blazer 10">
+      <button class="save-btn" data-name="Minimal Blazer 10">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/75/cd/a8/75cda8f0c1fa97400ddb111a2ab252d5.jpg" alt="Minimal Blazer 11">
+      <button class="save-btn" data-name="Minimal Blazer 11">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/cf/2b/17/cf2b170bb539a10e72adbe0bd85c080e.jpg" alt="Minimal Blazer 12">
+      <button class="save-btn" data-name="Minimal Blazer 12">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://img-va.myshopline.com/image/store/1718796392248/jpeg-5608c061-e015-4515-8e17-efd535bbfbaf_800x.jpg?w=800&h=1200&q=80.jpg" alt="Minimal Blazer 13">
+      <button class="save-btn" data-name="Minimal Blazer 13">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/99/bf/c5/99bfc538583786b48c3bbb1e6b7da865.jpg" alt="Minimal Blazer 14">
+      <button class="save-btn" data-name="Minimal Blazer 14">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/35/ef/8b/35ef8b2969ba52c7d63d2c47724cf7a8.jpg" alt="Minimal Blazer 15">
+      <button class="save-btn" data-name="Minimal Blazer 15">🤍</button>
+    </div>
+
+   </div>
+
+  <script>
+    function loadSaved() {
+      return JSON.parse(localStorage.getItem("savedStyles")) || [];
+    }
+
+    function saveToLocal(data) {
+      localStorage.setItem("savedStyles", JSON.stringify(data));
+    }
+
+    function isSaved(img) {
+      let saved = loadSaved();
+      return saved.some(item => item.img === img);
+    }
+
+    $(document).ready(function(){
+      // initialize buttons
+      $(".style-card").each(function(){
+        let img = $(this).find("img").attr("src");
+        let btn = $(this).find(".save-btn");
+        if(isSaved(img)){
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        }
+      });
+
+      $(".save-btn").click(function(){
+        let btn = $(this);
+        let card = btn.closest(".style-card");
+        let styleName = btn.data("name");
+        let styleImg = card.find("img").attr("src");
+        let saved = loadSaved();
+
+        if(btn.hasClass("unsaved")) {
+          saved.push({name: styleName, img: styleImg});
+          saveToLocal(saved);
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        } else {
+          saved = saved.filter(item => item.img !== styleImg);
+          saveToLocal(saved);
+          btn.text("🤍").removeClass("saved").addClass("unsaved");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

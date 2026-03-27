@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StyleSync - Formal</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { background-color: #fdfdfd; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background-color: #d0e1f9; padding: 10px 20px; }
+    nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav li { margin: 5px 15px; }
+    nav a { text-decoration: none; color: #003366; font-weight: bold; }
+    h1, h2 { text-align: center; color: #003366; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .style-card { text-align: center; }
+    .style-card img { width: 200px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .save-btn { background: none; border: none; font-size: 22px; cursor: pointer; margin-top: 5px; }
+    .saved { color: red; }   /* ❤️ */
+    .unsaved { color: grey; } /* 🤍 */
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="streetwear.html">Streetwear</a></li>
+      <li><a href="boho.html">Boho</a></li>
+      <li><a href="ethnic.html">Ethnic</a></li>
+      <li><a href="formal.html">Formal</a></li>
+      <li><a href="retro.html">Retro</a></li>
+      <li><a href="minimal.html">Minimal</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>StyleSync</h1>
+  <h2>Formal Collection</h2>
+
+  <div class="gallery">
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/ff/58/00/ff5800d5c0c7d8c00d7c4f487d224e62.jpg" alt="Formal 1">
+      <button class="save-btn" data-name="Formal 1">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/7d/c8/cf/7dc8cf1e4a04270c39f29b40bcc23f6c.jpg" alt="Formal 2">
+      <button class="save-btn" data-name="Formal 2">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/7a/54/0f/7a540fc4e6d351bd2e74cbeca147d747.jpg" alt="Formal 3">
+      <button class="save-btn" data-name="Formal 3">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/8b/f1/3b/8bf13b64f39ddb12ef02f0a87a7a35b2.jpg" alt="Formal 4">
+      <button class="save-btn" data-name="Formal 4">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/51/2d/e8/512de8b6c6ced84369a0acbac4b56f86.jpg" alt="Formal 5">
+      <button class="save-btn" data-name="Formal 5">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/04/54/b0/0454b01507788eb913e571047bd45591.jpg" alt="Formal 6">
+      <button class="save-btn" data-name="Formal 6">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/57/db/15/57db15075ed973843dda86364da0e8cf.jpg" alt="Formal 7">
+      <button class="save-btn" data-name="Formal 7">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/b7/22/e5/b722e5f4c5bcec415b4a99a0f97b4d73.jpg" alt="Formal 8">
+      <button class="save-btn" data-name="Formal 8">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/c4/86/c6/c486c64abbd70342f31be15cefd1def3.jpg" alt="Formal 9">
+      <button class="save-btn" data-name="Formal 9">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/2a/be/4f/2abe4ff0479722213a25b2968cf2c345.jpg" alt="Formal 10">
+      <button class="save-btn" data-name="Formal 10">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/01/29/30/01293041bd2337ea0432d81157d1dd0f.jpg" alt="Formal 11">
+      <button class="save-btn" data-name="Formal 11">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/58/e7/0f/58e70f6354dbfbdf2939ddc82992e1a9.jpg" alt="Formal 12">
+      <button class="save-btn" data-name="Formal 12">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/1d/d4/12/1dd412706b9179d2f34765f72331905e.jpg" alt="Formal 13">
+      <button class="save-btn" data-name="Formal 13">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/32/06/8c/32068cb2ddcbabf627bc34584d521a3a.jpg" alt="Formal 14">
+      <button class="save-btn" data-name="Formal 14">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/4a/68/92/4a6892c70113b9bdde23654cbfc1d411.jpg" alt="Formal 15">
+      <button class="save-btn" data-name="Formal 15">🤍</button>
+    </div>
+
+  </div>
+
+  <script>
+    function loadSaved() {
+      return JSON.parse(localStorage.getItem("savedStyles")) || [];
+    }
+
+    function saveToLocal(data) {
+      localStorage.setItem("savedStyles", JSON.stringify(data));
+    }
+
+    function isSaved(img) {
+      let saved = loadSaved();
+      return saved.some(item => item.img === img);
+    }
+
+    $(document).ready(function(){
+      $(".style-card").each(function(){
+        let img = $(this).find("img").attr("src");
+        let btn = $(this).find(".save-btn");
+        if(isSaved(img)){
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        }
+      });
+
+      $(".save-btn").click(function(){
+        let btn = $(this);
+        let card = btn.closest(".style-card");
+        let styleName = btn.data("name");
+        let styleImg = card.find("img").attr("src");
+        let saved = loadSaved();
+
+        if(btn.hasClass("unsaved")) {
+          saved.push({name: styleName, img: styleImg});
+          saveToLocal(saved);
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        } else {
+          saved = saved.filter(item => item.img !== styleImg);
+          saveToLocal(saved);
+          btn.text("🤍").removeClass("saved").addClass("unsaved");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StyleSync - Saved Styles</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { background-color: #fff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background-color: #ddd; padding: 10px 20px; }
+    nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav li { margin: 5px 15px; }
+    nav a { text-decoration: none; color: #333; font-weight: bold; }
+    h1, h2 { text-align: center; color: #333; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .style-card { text-align: center; }
+    .style-card img { width: 200px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .save-btn { background: none; border: none; font-size: 22px; cursor: pointer; margin-top: 5px; }
+    .saved { color: red; }   /* ❤️ */
+    .unsaved { color: grey; } /* 🤍 */
+    #clearAll { display: block; margin: 20px auto; padding: 10px 20px; background-color: #ff6666; color: white; border: none; border-radius: 5px; cursor: pointer; }
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="streetwear.html">Streetwear</a></li>
+      <li><a href="boho.html">Boho</a></li>
+      <li><a href="elegance.html">Elegance</a></li>
+      <li><a href="formal.html">Formal</a></li>
+      <li><a href="retro.html">Retro</a></li>
+      <li><a href="minimal.html">Minimal</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>StyleSync</h1>
+  <h2>Your Saved Styles</h2>
+
+  <button id="clearAll">Clear All</button>
+
+  <div class="gallery" id="savedGallery"></div>
+
+  <script>
+    function loadSaved() {
+      return JSON.parse(localStorage.getItem("savedStyles")) || [];
+    }
+
+    function saveToLocal(data) {
+      localStorage.setItem("savedStyles", JSON.stringify(data));
+    }
+
+    function renderSaved() {
+      let saved = loadSaved();
+      let gallery = $("#savedGallery");
+      gallery.empty();
+
+      if(saved.length === 0){
+        gallery.append("<p>No saved styles yet ❤️</p>");
+        return;
+      }
+
+      saved.forEach(item => {
+        let card = $(`
+          <div class="style-card">
+            <img src="${item.img}" alt="${item.name}">
+            <button class="save-btn saved" data-name="${item.name}" data-img="${item.img}">❤️</button>
+          </div>
+        `);
+        gallery.append(card);
+      });
+    }
+
+    $(document).ready(function(){
+      renderSaved();
+
+      $(document).on("click", ".save-btn", function(){
+        let btn = $(this);
+        let styleImg = btn.data("img");
+        let saved = loadSaved();
+
+        if(btn.hasClass("saved")) {
+          saved = saved.filter(item => item.img !== styleImg);
+          saveToLocal(saved);
+          renderSaved();
+        } else {
+          saved.push({name: btn.data("name"), img: styleImg});
+          saveToLocal(saved);
+          renderSaved();
+        }
+      });
+
+      $("#clearAll").click(function(){
+        localStorage.removeItem("savedStyles");
+        renderSaved();
+      });
+    });
+</script>
+</body>
+</html>

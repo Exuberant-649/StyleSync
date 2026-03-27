@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StyleSync - Retro</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { background-color: #fff0f5; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background-color: #ffccdd; padding: 10px 20px; }
+    nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav li { margin: 5px 15px; }
+    nav a { text-decoration: none; color: #800040; font-weight: bold; }
+    h1, h2 { text-align: center; color: #800040; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .style-card { text-align: center; }
+    .style-card img { width: 200px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .save-btn { background: none; border: none; font-size: 22px; cursor: pointer; margin-top: 5px; }
+    .saved { color: red; }   /* ❤️ */
+    .unsaved { color: grey; } /* 🤍 */
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="streetwear.html">Streetwear</a></li>
+      <li><a href="boho.html">Boho</a></li>
+      <li><a href="ethnic.html">Ethnic</a></li>
+      <li><a href="formal.html">Formal</a></li>
+      <li><a href="retro.html">Retro</a></li>
+      <li><a href="minimal.html">Minimal</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>StyleSync</h1>
+  <h2>Retro Aesthetic Collection</h2>
+
+  <div class="gallery">
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/23/1b/a4/231ba42a7830474cb998ada68e1bfa2a.jpg" alt="Retro 1">
+      <button class="save-btn" data-name="Retro 1">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/b8/24/3c/b8243c3996404828eeaf5c21280f3588.jpg" alt="Retro 2">
+      <button class="save-btn" data-name="Retro 2">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/ad/33/44/ad3344b0030ba22c078111486af74ff8.jpg" alt="Retro 3">
+      <button class="save-btn" data-name="Retro 3">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/a2/13/9f/a2139f8615337d72c8b4ca61a54220b8.jpg" alt="Retro 4">
+      <button class="save-btn" data-name="Retro 4">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/a2/dc/f8/a2dcf828480400e170a141d4113a1df7.jpg" alt="Retro 5">
+      <button class="save-btn" data-name="Retro 5">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/7a/e1/ec/7ae1ec48203d8d456bd531ecd434c4ec.jpg" alt="Retro 6">
+      <button class="save-btn" data-name="Retro 6">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/7b/09/d8/7b09d87534aacca07f92ca2d76f11196.jpg" alt="Retro 7">
+      <button class="save-btn" data-name="Retro 7">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/48/6f/ba/486fbaf0675adf48ae38b90583956eb2.jpg" alt="Retro 8">
+      <button class="save-btn" data-name="Retro 8">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/3f/b3/db/3fb3db0efa3d243cc95a7d4ba7ec707c.jpg" alt="Retro 9">
+      <button class="save-btn" data-name="Retro 9">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/db/75/6d/db756dd950cc359190968437510451d8.jpg" alt="Retro 10">
+      <button class="save-btn" data-name="Retro 10">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/b7/d3/1c/b7d31c850ee99db7afb40c0759bc1959.jpg" alt="Retro 11">
+      <button class="save-btn" data-name="Retro 11">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/c1/01/b6/c101b6289feda129a3d200b29ddd464f.jpg" alt="Retro 12">
+      <button class="save-btn" data-name="Retro 12">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/a9/4f/e5/a94fe554484cbf9a49591df6aa2a4621.jpg" alt="Retro 13">
+      <button class="save-btn" data-name="Retro 13">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/de/7f/a2/de7fa226b6d0886eb6789842b3210cf3.jpg" alt="Retro 14">
+      <button class="save-btn" data-name="Retro 14">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/12/87/23/128723d6da629408fa04bfa8f02a896c.jpg" alt="Retro 15">
+      <button class="save-btn" data-name="Retro 15">🤍</button>
+    </div>
+
+  </div>
+
+  <script>
+    function loadSaved() {
+      return JSON.parse(localStorage.getItem("savedStyles")) || [];
+    }
+
+    function saveToLocal(data) {
+      localStorage.setItem("savedStyles", JSON.stringify(data));
+    }
+
+    function isSaved(img) {
+      let saved = loadSaved();
+      return saved.some(item => item.img === img);
+    }
+
+    $(document).ready(function(){
+      $(".style-card").each(function(){
+        let img = $(this).find("img").attr("src");
+        let btn = $(this).find(".save-btn");
+        if(isSaved(img)){
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        }
+      });
+
+      $(".save-btn").click(function(){
+        let btn = $(this);
+        let card = btn.closest(".style-card");
+        let styleName = btn.data("name");
+        let styleImg = card.find("img").attr("src");
+        let saved = loadSaved();
+
+        if(btn.hasClass("unsaved")) {
+          saved.push({name: styleName, img: styleImg});
+          saveToLocal(saved);
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        } else {
+          saved = saved.filter(item => item.img !== styleImg);
+          saveToLocal(saved);
+          btn.text("🤍").removeClass("saved").addClass("unsaved");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

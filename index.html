@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StyleSync - Home</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      background-color: #f7f0ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #e9d6ff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+    nav li {
+      display: inline;
+    }
+    nav a {
+      text-decoration: none;
+      color: #5c2784;
+      font-weight: bold;
+    }
+    .auth-links {
+      display: flex;
+      gap: 15px;
+    }
+    .auth-links a {
+      font-size: 14px;
+    }
+    h1 {
+      text-align: center;
+      color: #7b2cbf;
+    }
+    h2 {
+      text-align: center;
+      color: #9d4edd;
+      margin-top: 30px;
+    }
+    .modules {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .style-card {
+      text-align: center;
+    }
+    .style-card img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .style-card img:hover {
+      transform: scale(1.05);
+    }
+    .save-btn {
+      background-color: transparent;
+      border: none;
+      font-size: 22px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+    .style-label {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #5c2784;
+    }
+     body.dark {
+     background:#1e1e1e; 
+     color:#f5f5f5;
+    }
+    body.dark nav {background:#333;}
+    body.dark nav a {color:#f5f5f5;}
+    body.dark h1, body.dark h2 {color:#ffdd57;}
+    body.dark { background:#1e1e1e; color:#f5f5f5; }
+    body.dark nav { background:#333; }
+    body.dark nav a { color:#f5f5f5; }
+    body.dark h1, body.dark h2 { color:#ffdd57; }
+
+     {
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#searchBar {
+  width: 50%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #9d4edd;
+  border-radius: 30px;  /* curved */
+  outline: none;
+  transition: 0.3s;
+}
+
+#searchBar:focus {
+  border-color: #5c2784;
+  box-shadow: 0 0 8px rgba(92,39,132,0.4);
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="streetwear.html">Streetwear</a></li>
+      <li><a href="boho.html">Boho</a></li>
+      <li><a href="ethnic.html">Ethnic</a></li>
+      <li><a href="formal.html">Formal</a></li>
+      <li><a href="retro.html">Retro</a></li>
+      <li><a href="minimal.html">Minimal</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="auth-links">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="forgot.html">Forgot Password</a>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+<div class="search-container">
+  <input type="text" id="searchBar" placeholder="Search styles...">
+</div>
+
+
+  <h1>StyleSync</h1>
+  <h2>Explore Styles</h2>
+  <div class="modules">
+    <div class="style-card">
+      <a href="streetwear.html"><img src="https://i.pinimg.com/736x/be/17/fb/be17fb9a4fb0f5a1c4b64495b9b3d519.jpg" alt="Streetwear"></a>
+      <button class="save-btn" data-name="Streetwear" data-img="https://i.pinimg.com/736x/be/17/fb/be17fb9a4fb0f5a1c4b64495b9b3d519.jpg">🤍</button>
+      <div class="style-label">Streetwear</div>
+    </div>
+
+    <div class="style-card">
+      <a href="boho.html"><img src="https://i.pinimg.com/736x/58/48/da/5848dacb59baf3270376bdf7a25c90bd.jpg" alt="Boho"></a>
+      <button class="save-btn" data-name="Boho" data-img="https://i.pinimg.com/736x/58/48/da/5848dacb59baf3270376bdf7a25c90bd.jpg">🤍</button>
+      <div class="style-label">Boho</div>
+    </div>
+
+    <div class="style-card">
+      <a href="ethnic.html"><img src="https://i.pinimg.com/736x/59/b6/77/59b677f56d6fe2e9c15acf93ced7edc3.jpg" alt="Ethnic"></a>
+      <button class="save-btn" data-name="Ethnic" data-img="https://i.pinimg.com/736x/59/b6/77/59b677f56d6fe2e9c15acf93ced7edc3.jpg">🤍</button>
+      <div class="style-label">Ethnic</div>
+    </div>
+
+    <div class="style-card">
+      <a href="formal.html"><img src="https://i.pinimg.com/736x/0d/ee/3a/0dee3a7e181d49b6e27e23c69975eb45.jpg" alt="Formal"></a>
+      <button class="save-btn" data-name="Formal" data-img="https://i.pinimg.com/736x/0d/ee/3a/0dee3a7e181d49b6e27e23c69975eb45.jpg">🤍</button>
+      <div class="style-label">Formal</div>
+    </div>
+
+    <div class="style-card">
+      <a href="retro.html"><img src="https://i.pinimg.com/736x/cc/20/64/cc2064d00ad4f4cbb52f2a613997f0d6.jpg" alt="Retro"></a>
+      <button class="save-btn" data-name="Retro" data-img="https://i.pinimg.com/736x/cc/20/64/cc2064d00ad4f4cbb52f2a613997f0d6.jpg">🤍</button>
+      <div class="style-label">Retro</div>
+    </div>
+
+    <div class="style-card">
+      <a href="minimal.html"><img src="https://i.pinimg.com/736x/f4/7f/86/f47f8619ef2df1307e5fb3f684a60d2e.jpg" alt="Minimal"></a>
+      <button class="save-btn" data-name="Minimal" data-img="https://i.pinimg.com/736x/f4/7f/86/f47f8619ef2df1307e5fb3f684a60d2e.jpg">🤍</button>
+      <div class="style-label">Minimal</div>
+    </div>
+  </div>
+
+  <script>
+    function updateHearts() {
+      let saved = JSON.parse(localStorage.getItem("savedStyles")) || [];
+      $(".save-btn").each(function(){
+        let styleName = $(this).data("name");
+        let isSaved = saved.find(item => item.name === styleName);
+        $(this).text(isSaved ? "❤️" : "🤍");
+      });
+    }
+
+    $(document).ready(function(){
+      updateHearts();
+
+      $(".save-btn").click(function(e){
+        e.preventDefault();
+        let styleName = $(this).data("name");
+        let styleImg = $(this).data("img");
+
+        let saved = JSON.parse(localStorage.getItem("savedStyles")) || [];
+
+        let index = saved.findIndex(item => item.name === styleName);
+        if(index > -1){
+          saved.splice(index, 1); // remove
+        } else {
+          saved.push({name: styleName, img: styleImg}); // add
+        }
+
+        localStorage.setItem("savedStyles", JSON.stringify(saved));
+        updateHearts(); // refresh hearts
+      });
+    });
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.theme === "dark") {
+      document.body.classList.add("dark");
+      document.getElementById("theme-toggle").textContent = "☀️";
+    }
+    document.getElementById("theme-toggle").onclick = () => {
+      const dark = document.body.classList.toggle("dark");
+      localStorage.theme = dark ? "dark" : "light";
+      document.getElementById("theme-toggle").textContent = dark ? "☀️" : "🌙";
+    };
+  });
+</script>
+<script>
+  document.getElementById("searchBar").addEventListener("keyup", function() {
+    let value = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".style-card");
+    
+    cards.forEach(card => {
+      let name = card.querySelector("img").alt.toLowerCase();
+      if (name.includes(value)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+</script>
+<script>
+  document.getElementById("searchBar").addEventListener("keyup", function() {
+    let value = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".style-card");
+    
+    cards.forEach(card => {
+      let name = card.querySelector("img").alt.toLowerCase();
+      if (name.includes(value)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+</script>
+</body>
+</html>

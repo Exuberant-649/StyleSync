@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - StyleSync</title>
+  <style>
+    body {
+      background-color: #f3edff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      color: #6a0dad;
+    }
+    .login-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #a066e0;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    a {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #6a0dad;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login to StyleSync</h1>
+  <div class="login-box">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkLogin()">Login</button>
+    <a href="forgot.html">Forgot Password?</a>
+    <a href="signup.html">Don't have an account? Sign up</a>
+  </div>
+
+  <script>
+    function checkLogin() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      if (email === "" || password === "") {
+        alert("Please enter both email and password.");
+      } else {
+        alert("Login successful!");
+      }
+    }
+  </script>
+</body>
+</html>

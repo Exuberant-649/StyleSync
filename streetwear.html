@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StyleSync - Streetwear</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { background-color: #f5f0ff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background-color: #e6ccff; padding: 10px 20px; }
+    nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav li { margin: 5px 15px; }
+    nav a { text-decoration: none; color: #4b0082; font-weight: bold; }
+    h1, h2 { text-align: center; color: #4b0082; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .style-card { text-align: center; }
+    .style-card img { width: 200px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .save-btn { background: none; border: none; font-size: 22px; cursor: pointer; margin-top: 5px; }
+    .saved { color: red; }   /* ❤️ */
+    .unsaved { color: grey; } /* 🤍 */
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="streetwear.html">Streetwear</a></li>
+      <li><a href="boho.html">Boho</a></li>
+      <li><a href="ethnic.html">Ethnic</a></li>
+      <li><a href="formal.html">Formal</a></li>
+      <li><a href="retro.html">Retro</a></li>
+      <li><a href="minimal.html">Minimal</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>StyleSync</h1>
+  <h2>Streetwear Collection</h2>
+
+  <div class="gallery">
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/43/fe/af/43feaf1c37fa1f091ca69851cc182eb7.jpg" alt="Streetwear 1">
+      <button class="save-btn" data-name="Streetwear 1">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/37/d5/9a/37d59a0fbf1c030bacca482e929625a3.jpg" alt="Streetwear 2">
+      <button class="save-btn" data-name="Streetwear 2">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/4f/96/04/4f9604630471dfc7dfe6f78b4390674a.jpg" alt="Streetwear 3">
+      <button class="save-btn" data-name="Streetwear 3">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/cf/f2/a9/cff2a9af1cd024282e03ff8e1611376a.jpg" alt="Streetwear 4">
+      <button class="save-btn" data-name="Streetwear 4">🤍</button>
+    </div>
+    
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/4e/85/f2/4e85f25e11f69b3d163640014c6fa27b.jpg" alt="Streetwear 5">
+      <button class="save-btn" data-name="Streetwear 5">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/64/f3/7f/64f37f18c6baa0dd3019329be61e35c5.jpg" alt="Streetwear 6">
+      <button class="save-btn" data-name="Streetwear 6">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/61/b1/69/61b169a05ac94b809b6cd1c32dc7a8f9.jpg" alt="Streetwear 7">
+      <button class="save-btn" data-name="Streetwear 7">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/eb/76/13/eb76135bc36c8345ad69d63a457eddd0.jpg" alt="Streetwear 8">
+      <button class="save-btn" data-name="Streetwear 8">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/f5/0d/ac/f50dacddc935d37f0cc93c87e71df1a0.jpg" alt="Streetwear 9">
+      <button class="save-btn" data-name="Streetwear 9">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/68/bf/1e/68bf1e21227cb76572d048945fb2ea86.jpg" alt="Streetwear 10">
+      <button class="save-btn" data-name="Streetwear 10">🤍</button>
+    </div>
+
+    
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/6d/33/f5/6d33f5654be9af3ada4d8491be444d4c.jpg" alt="Streetwear 11">
+      <button class="save-btn" data-name="Streetwear 11">🤍</button>
+    </div>
+
+    
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/95/0e/65/950e655e5fa885dac3a60f996ab30500.jpg" alt="Streetwear 12">
+      <button class="save-btn" data-name="Streetwear 12">🤍</button>
+    </div>
+
+    
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/14/1c/02/141c022a22e82d9d47fa9849a72e5135.jpg" alt="Streetwear 13">
+      <button class="save-btn" data-name="Streetwear 13">🤍</button>
+    </div>
+
+    
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/5e/b0/df/5eb0df313cab18deb0e48b914613c004.jpg" alt="Streetwear 14">
+      <button class="save-btn" data-name="Streetwear 14">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/bc/14/cf/bc14cf66b87387996ede227a2d0f07b6.jpg" alt="Streetwear 15">
+      <button class="save-btn" data-name="Streetwear 15">🤍</button>
+    </div>
+    
+  </div>
+
+  <script>
+    function loadSaved() {
+      return JSON.parse(localStorage.getItem("savedStyles")) || [];
+    }
+
+    function saveToLocal(data) {
+      localStorage.setItem("savedStyles", JSON.stringify(data));
+    }
+
+    function isSaved(img) {
+      let saved = loadSaved();
+      return saved.some(item => item.img === img);
+    }
+
+    $(document).ready(function(){
+      $(".style-card").each(function(){
+        let img = $(this).find("img").attr("src");
+        let btn = $(this).find(".save-btn");
+        if(isSaved(img)){
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        }
+      });
+
+      $(".save-btn").click(function(){
+        let btn = $(this);
+        let card = btn.closest(".style-card");
+        let styleName = btn.data("name");
+        let styleImg = card.find("img").attr("src");
+        let saved = loadSaved();
+
+        if(btn.hasClass("unsaved")) {
+          saved.push({name: styleName, img: styleImg});
+          saveToLocal(saved);
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        } else {
+          saved = saved.filter(item => item.img !== styleImg);
+          saveToLocal(saved);
+          btn.text("🤍").removeClass("saved").addClass("unsaved");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+

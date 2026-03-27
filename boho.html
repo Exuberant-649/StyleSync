@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StyleSync - Boho</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { background-color: #f9fff2; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background-color: #d4f8c4; padding: 10px 20px; }
+    nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav li { margin: 5px 15px; }
+    nav a { text-decoration: none; color: #2e4600; font-weight: bold; }
+    h1, h2 { text-align: center; color: #355e3b; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .style-card { text-align: center; }
+    .style-card img { width: 200px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .save-btn { background: none; border: none; font-size: 22px; cursor: pointer; margin-top: 5px; }
+    .saved { color: red; }   /* ❤️ */
+    .unsaved { color: grey; } /* 🤍 */
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="streetwear.html">Streetwear</a></li>
+      <li><a href="boho.html">Boho</a></li>
+      <li><a href="ethnic.html">Ethnic</a></li>
+      <li><a href="formal.html">Formal</a></li>
+      <li><a href="retro.html">Retro</a></li>
+      <li><a href="minimal.html">Minimal</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>StyleSync</h1>
+  <h2>Boho-Chic Collection</h2>
+
+  <div class="gallery">
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/a6/05/51/a605516eec04c7ae982f76dcf38264ae.jpg" alt="Boho 1">
+      <button class="save-btn" data-name="Boho 1">🤍</button>
+    </div>
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/2a/fb/37/2afb37637f5ec7e857a857de04e26ea5.jpg" alt="Boho 2">
+      <button class="save-btn" data-name="Boho 2">🤍</button>
+    </div>
+
+ <div class="style-card">
+      <img src="https://i.pinimg.com/736x/b1/bf/84/b1bf8497be5b72124ee84836918d9c21.jpg" alt="Boho 3">
+      <button class="save-btn" data-name="Boho 3">🤍</button>
+    </div>
+
+
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/55/77/1c/55771cdbaf377a546ba70446885591cf.jpg" alt="Boho 4">
+      <button class="save-btn" data-name="Boho 4">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/7d/68/32/7d68325b44136115738959a6d0dfdb03.jpg" alt="Boho 5">
+      <button class="save-btn" data-name="Boho 5">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/5d/51/a6/5d51a6158e2ac34b934dd15c9c5a9489.jpg" alt="Boho 6">
+      <button class="save-btn" data-name="Boho 6">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/07/fd/93/07fd9355fad40a73fb925cd3ca529bac.jpg" alt="Boho 7">
+      <button class="save-btn" data-name="Boho 7">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/1e/d4/7c/1ed47c9cdc41bf64ee9cd9af8706f487.jpg" alt="Boho 8">
+      <button class="save-btn" data-name="Boho 8">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/be/a7/2d/bea72d96de994aab127c90040554c882.jpg" alt="Boho 9">
+      <button class="save-btn" data-name="Boho 9">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/10/be/51/10be51ca81e36cf424381e7390874247.jpg" alt="Boho 10">
+      <button class="save-btn" data-name="Boho 10">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/9a/92/fe/9a92fe067a58743a8f05a47447a78b82.jpg" alt="Boho 11">
+      <button class="save-btn" data-name="Boho 11">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/18/cc/8c/18cc8c6d0f7bed6429c6e334824aa259.jpg" alt="Boho 12">
+      <button class="save-btn" data-name="Boho 12">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/34/96/82/3496822927b62f16620f35cf9fcb315c.jpg" alt="Boho 13">
+      <button class="save-btn" data-name="Boho 13">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/82/cc/d9/82ccd9a94ed00a77ef8cc04c52320625.jpg" alt="Boho 14">
+      <button class="save-btn" data-name="Boho 14">🤍</button>
+    </div>
+
+     <div class="style-card">
+      <img src="https://i.pinimg.com/736x/c5/84/51/c5845144ee8ab9f69c7bd63af49c9a79.jpg" alt="Boho 15">
+      <button class="save-btn" data-name="Boho 15">🤍</button>
+    </div>
+
+  </div>
+
+  <script>
+    function loadSaved() {
+      return JSON.parse(localStorage.getItem("savedStyles")) || [];
+    }
+
+    function saveToLocal(data) {
+      localStorage.setItem("savedStyles", JSON.stringify(data));
+    }
+
+    function isSaved(img) {
+      let saved = loadSaved();
+      return saved.some(item => item.img === img);
+    }
+
+    $(document).ready(function(){
+      $(".style-card").each(function(){
+        let img = $(this).find("img").attr("src");
+        let btn = $(this).find(".save-btn");
+        if(isSaved(img)){
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        }
+      });
+
+      $(".save-btn").click(function(){
+        let btn = $(this);
+        let card = btn.closest(".style-card");
+        let styleName = btn.data("name");
+        let styleImg = card.find("img").attr("src");
+        let saved = loadSaved();
+
+        if(btn.hasClass("unsaved")) {
+          saved.push({name: styleName, img: styleImg});
+          saveToLocal(saved);
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        } else {
+          saved = saved.filter(item => item.img !== styleImg);
+          saveToLocal(saved);
+          btn.text("🤍").removeClass("saved").addClass("unsaved");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

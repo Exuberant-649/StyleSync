@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forgot Password - StyleSync</title>
+  <style>
+    body {
+      background-color: #e0f7fa;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      color: #007b8f;
+    }
+    .forgot-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    a {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #007b8f;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Reset Your Password</h1>
+  <div class="forgot-box">
+    <input type="email" id="email" placeholder="Enter your registered email">
+    <button onclick="resetPassword()">Send Reset Link</button>
+    <a href="login.html">Back to Login</a>
+  </div>
+
+  <script>
+    function resetPassword() {
+      var email = document.getElementById("email").value;
+
+      if (email === "") {
+        alert("Please enter your email.");
+      } else {
+        alert("Password reset link has been sent to " + email);
+      }
+    }
+  </script>
+</body>
+</html>

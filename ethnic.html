@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StyleSync - Ethnic Elegance</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { background-color: #fffaf2; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background-color: #ffe0cc; padding: 10px 20px; }
+    nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav li { margin: 5px 15px; }
+    nav a { text-decoration: none; color: #6e260e; font-weight: bold; }
+    h1, h2 { text-align: center; color: #8b4513; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .style-card { text-align: center; }
+    .style-card img { width: 200px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .save-btn { background: none; border: none; font-size: 22px; cursor: pointer; margin-top: 5px; }
+    .saved { color: red; }   /* ❤️ */
+    .unsaved { color: grey; } /* 🤍 */
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="streetwear.html">Streetwear</a></li>
+      <li><a href="boho.html">Boho</a></li>
+      <li><a href="ethnic.html">Ethnic</a></li>
+      <li><a href="formal.html">Formal</a></li>
+      <li><a href="retro.html">Retro</a></li>
+      <li><a href="minimal.html">Minimal</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>StyleSync</h1>
+  <h2>Ethnic Elegance Collection</h2>
+
+  <div class="gallery">
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/ff/84/09/ff84093970b8cdaad77238ad2596d43a.jpg" alt="Ethnic 1">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 1">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/9e/c2/81/9ec28156d4c4f815b4b2149b00038f02.jpg" alt="Ethnic 2">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 2">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/cd/da/72/cdda728d3fe690009e120c1a9b01c64b.jpg" alt="Ethnic 3">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 3">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/bb/fe/8d/bbfe8dd62819018f40057b6ac00f2b90.jpg" alt="Ethnic 4">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 4">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/4b/f4/3d/4bf43d451c876b4eafd981b3121de0a2.jpg" alt="Ethnic 5">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 5">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/ac/cc/4b/accc4bb47f37fc6beaf8ab7ec8d5a056.jpg" alt="Ethnic 6">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 6">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/31/48/28/314828d9ee575efbccff22dd5c61064a.jpg" alt="Ethnic 7">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 7">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/34/ce/f7/34cef71c44e5a9a2a8ae87cde3dc19fb.jpg" alt="Ethnic 8">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 8">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/21/76/93/217693c165314667fb8ace0f94be9ddb.jpg" alt="Ethnic 9">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 9">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/64/12/ed/6412eddbb399eaf244271d0455e6ba96.jpg" alt="Ethnic 10">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 10">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/5b/24/ab/5b24abe8ef7aa6a694e82c36050e44b2.jpg" alt="Ethnic 11">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 11">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/474x/97/fe/d0/97fed0001d401ffe4a12ab7740edfe31.jpg" alt="Ethnic 12">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 12">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/47/31/3f/47313fa4338b7dddc4ff8693c55ea258.jpg" alt="Ethnic 13">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 13">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/4e/b2/8b/4eb28ba7601a826f7e6ead4d37f09fb9.jpg" alt="Ethnic 14">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 14">🤍</button>
+    </div>
+    <div class="style-card">
+      <img src="https://i.pinimg.com/736x/f6/85/13/f6851395b7f70525a0cf9bc3fb69292f.jpg" alt="Ethnic 15">
+      <button type="button" class="save-btn" data-name="Ethnic Elegance 15">🤍</button>
+    </div>
+  </div>
+
+  <script>
+    function loadSaved() {
+      return JSON.parse(localStorage.getItem("savedStyles")) || [];
+    }
+
+    function saveToLocal(data) {
+      localStorage.setItem("savedStyles", JSON.stringify(data));
+    }
+
+    function isSaved(img) {
+      let saved = loadSaved();
+      return saved.some(item => item.img === img);
+    }
+
+    $(document).ready(function(){
+      $(".style-card").each(function(){
+        let img = $(this).find("img").attr("src");
+        let btn = $(this).find(".save-btn");
+        if(isSaved(img)){
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        }
+      });
+
+      $(".save-btn").click(function(){
+        let btn = $(this);
+        let card = btn.closest(".style-card");
+        let styleName = btn.data("name");
+        let styleImg = card.find("img").attr("src");
+        let saved = loadSaved();
+
+        if(btn.hasClass("unsaved")) {
+          saved.push({name: styleName, img: styleImg});
+          saveToLocal(saved);
+          btn.text("❤️").removeClass("unsaved").addClass("saved");
+        } else {
+          saved = saved.filter(item => item.img !== styleImg);
+          saveToLocal(saved);
+          btn.text("🤍").removeClass("saved").addClass("unsaved");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

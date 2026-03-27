@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StyleSync - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #fffef5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #f7e9b9;
+      padding: 10px 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav li {
+      margin: 5px 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #805b00;
+      font-weight: bold;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #a67800;
+    }
+    .contact-box {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: #333333;
+    }
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #ffcd5c;
+      color: #402000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #f2ba3b;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="streetwear.html">Streetwear</a></li>
+      <li><a href="boho.html">Boho</a></li>
+      <li><a href="ethnic.html">Ethnic</a></li>
+      <li><a href="formal.html">Formal</a></li>
+      <li><a href="retro.html">Retro</a></li>
+      <li><a href="minimal.html">Minimal</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>StyleSync</h1>
+  <h2>Contact Us</h2>
+
+  <div class="contact-box">
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell us what you love or want us to improve!" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>

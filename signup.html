@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up - StyleSync</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      color: #d63384;
+    }
+    .signup-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    a {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #d63384;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Create Your StyleSync Account</h1>
+  <div class="signup-box">
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkSignup()">Sign Up</button>
+    <a href="login.html">Already have an account? Login</a>
+  </div>
+
+  <script>
+    function checkSignup() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      if (name === "" || email === "" || password === "") {
+        alert("Please fill in all fields.");
+      } else {
+        alert("Thanks for signing up, " + name + "!");
+      }
+    }
+  </script>
+</body>
+</html>
