@@ -11,17 +11,22 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      margin: 0;
     }
+
     h1 {
       color: #6a0dad;
     }
+
     .login-box {
       background-color: #ffffff;
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       width: 300px;
+      text-align: center;
     }
+
     input {
       width: 100%;
       padding: 10px;
@@ -29,6 +34,7 @@
       border-radius: 8px;
       border: 1px solid #ccc;
     }
+
     button {
       width: 100%;
       padding: 10px;
@@ -38,7 +44,13 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      font-size: 16px;
     }
+
+    button:hover {
+      background-color: #8b4fd1;
+    }
+
     a {
       display: block;
       margin-top: 15px;
@@ -47,14 +59,23 @@
       color: #6a0dad;
       text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
+
   <h1>Login to StyleSync</h1>
+
   <div class="login-box">
     <input type="email" id="email" placeholder="Email">
     <input type="password" id="password" placeholder="Password">
+    
     <button onclick="checkLogin()">Login</button>
+
     <a href="forgot.html">Forgot Password?</a>
     <a href="signup.html">Don't have an account? Sign up</a>
   </div>
@@ -68,8 +89,12 @@
         alert("Please enter both email and password.");
       } else {
         alert("Login successful!");
+        
+        // Redirect to home page
+        window.location.href = "index.html";
       }
     }
   </script>
+
 </body>
 </html>
