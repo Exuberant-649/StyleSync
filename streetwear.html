@@ -10,9 +10,9 @@
     nav li { margin: 5px 15px; }
     nav a { text-decoration: none; color: #4b0082; font-weight: bold; }
     h1, h2 { text-align: center; color: #4b0082; }
-    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-    .style-card { text-align: center; }
-    .style-card img { width: 200px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .gallery { column-count: 2; column-gap: 15px; padding:20px; }
+    .style-card { break-inside: avoid; margin-bottom:15px; }
+    .style-card img { width: 100%; border-radius:12px; }
     .save-btn { background: none; border: none; font-size: 22px; cursor: pointer; margin-top: 5px; }
     .saved { color: red; }   /* ❤️ */
     .unsaved { color: grey; } /* 🤍 */
